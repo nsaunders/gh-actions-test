@@ -5,5 +5,6 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/build
       - run: cat foo.txt
