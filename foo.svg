@@ -1,0 +1,32 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml" style="height: 100%">
+			<style>
+				@keyframes resize {
+					0% {
+						width: 33%;
+					}
+          25% {
+            width: 100%;
+          }
+          50% {
+            width: 100%;
+          }
+					75% {
+            width: 33%;
+					}
+				}
+        
+        .foo {
+          background: #666;
+        }
+        @container (max-width: 400px) {
+          .foo {
+            background: #ccc;
+          }
+        }
+			</style>
+			<div style="container-type: size; animation: resize 5s infinite; width: 33%; height: 100%; background: black; color: #fff; display: grid; place-items: center;"><h1 class="foo">Hello</h1><input type="checkbox" /></div>
+		</div>
+	</foreignObject>
+</svg>
