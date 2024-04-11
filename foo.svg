@@ -30,8 +30,12 @@
 				.main:hover {
 				background:blue;
 				}
+
+				* { --c-0: initial; --c-1: ; }
+				:checked { --c-0: ; --c-1: initial; }
+				:checked {}
 			</style>
-			<div class="main" style="container-type: size; animation: resize 5s infinite; width: 33%; height: 100%; color: #fff; display: grid; place-items: center;"><h1 class="foo">Hello</h1><input type="checkbox" style="width: 24px; height: 24px; background: pink" /></div>
+			<div class="main" style="container-type: size; animation: resize 5s infinite; width: 33%; height: 100%; color: #fff; display: grid; place-items: center;"><h1 class="foo">Hello</h1><input type="checkbox" style="width: 24px; height: 24px; background: var(--c-1, red) var(--c-0, pink)" /></div>
 		</div>
 	</foreignObject>
 </svg>
